@@ -28,4 +28,53 @@ function digits(n) {
   return l;
 }
 
-console.log(digits(1234));
+function opposite(number) {
+  return number*(-1);
+}
+
+
+// Test.assertEquals(perimeterSequence(1, 1), 4)
+// Test.assertEquals(perimeterSequence(1, 2), 8)
+// Test.assertEquals(perimeterSequence(1, 3), 12)
+
+function perimeterSequence(a, n) {
+  return a * 4 * n;
+}
+
+
+function removeChar(str){
+  let arr = str.split('');
+  let l = arr.length;
+  
+  arr.shift();
+  arr.pop();
+  a = arr.join('');
+
+  return a;
+}
+
+
+function noSpace(x){
+  return x.replace(/\s/g,'')
+}
+
+
+function reverse(str, ending){
+  return str.endsWith(ending);
+}
+
+
+
+function simpleMultiplication(number) {
+  if (number % 2 === 0) {
+    return number * 8;
+  }
+   return number * 9;
+ }
+
+
+function repeatStr (n, s) {
+  let new_str = '';
+  while (n-- > 0) new_str += str;
+  return new_str;
+}
